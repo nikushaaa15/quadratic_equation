@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:aquamarine;
+
+        }
+P{
+    color: aliceblue;
+    background-color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+font-size: 80px;
+text-shadow: 0 0 20px cyan
+}
+    </style>
+</head>
+<body>
+    <script>
+
+let A = +prompt("Введіть значення A")
+let B = +prompt("Введіть значення B")
+let C = +prompt("Введіть значення C")
+ //let x=+prompt("Введіть значення x");    
+    let D = B * B - 4 * A * C 
+
+let x1 = (-B + Math.sqrt (D))/(2*A)
+let x2 = (-B - Math.sqrt (D))/(2*A)
+      if (D > 0) {
+     alert('2 корені');  }
+     else if (D == 0) {
+     alert('1 корень');  }
+     else  {
+     alert('0 коренів');  }
+     //let k=A*x*x+d*x+C
+     document.write("<p>"+"D =  "+ B + "*" + B + "-"+'4'+"*"+A+"*"+C +'='+ D +"</p>");
+    </script>
+    </body>
+    </html>
